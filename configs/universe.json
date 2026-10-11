@@ -1,0 +1,496 @@
+{
+  "lookback": 252,
+  "top_k": 5,
+  "max_weight": 0.35,
+  "class_caps": {
+    "equity": 0.55,
+    "bond": 0.8,
+    "gold": 0.3,
+    "oil": 0.15
+  },
+  "cdar_fraction": 0.6,
+  "historical_mdd_fraction": 0.8,
+  "vol_fraction": 0.5,
+  "confidence": 0.95,
+  "soft_stop_fraction": 0.5,
+  "hard_stop_fraction": 0.9,
+  "fee_bps": 3.0,
+  "slippage_bps": 5.0,
+  "cash_rate": 0.0,
+  "risk_free_rate": 0.0,
+  "reference_penalty": 0.05,
+  "turnover_penalty": 0.002,
+  "markets": {
+    "CN": {
+      "currency": "CNY",
+      "assets": {
+        "510300.SH": {
+          "name": "沪深300",
+          "class": "equity",
+          "bucket": "broad",
+          "instrument_type": "fund",
+          "wind_name": "沪深300ETF华泰柏瑞",
+          "listing_date": "2012-05-28"
+        },
+        "510500.SH": {
+          "name": "中证500",
+          "class": "equity",
+          "bucket": "broad",
+          "instrument_type": "fund",
+          "wind_name": "中证500ETF南方",
+          "listing_date": "2013-03-15"
+        },
+        "512100.SH": {
+          "name": "中证1000",
+          "class": "equity",
+          "bucket": "broad",
+          "instrument_type": "fund",
+          "wind_name": "中证1000ETF南方",
+          "listing_date": "2016-11-04"
+        },
+        "510050.SH": {
+          "name": "上证50",
+          "class": "equity",
+          "bucket": "broad",
+          "instrument_type": "fund",
+          "wind_name": "上证50ETF华夏",
+          "listing_date": "2005-02-23"
+        },
+        "588000.SH": {
+          "name": "科创50",
+          "class": "equity",
+          "bucket": "growth",
+          "instrument_type": "fund",
+          "wind_name": "科创50ETF华夏",
+          "listing_date": "2020-11-16"
+        },
+        "159915.SZ": {
+          "name": "创业板",
+          "class": "equity",
+          "bucket": "growth",
+          "instrument_type": "fund",
+          "wind_name": "创业板ETF易方达",
+          "listing_date": "2011-12-09"
+        },
+        "159307.SZ": {
+          "name": "红利低波100",
+          "class": "equity",
+          "bucket": "dividend",
+          "instrument_type": "fund",
+          "wind_name": "红利低波100ETF博时",
+          "listing_date": "2024-04-25"
+        },
+        "512890.SH": {
+          "name": "红利低波50",
+          "class": "equity",
+          "bucket": "dividend",
+          "instrument_type": "fund",
+          "wind_name": "红利低波ETF华泰柏瑞",
+          "listing_date": "2019-01-18"
+        },
+        "510880.SH": {
+          "name": "红利",
+          "class": "equity",
+          "bucket": "dividend",
+          "instrument_type": "fund",
+          "wind_name": "红利ETF华泰柏瑞",
+          "listing_date": "2007-01-18"
+        },
+        "512800.SH": {
+          "name": "银行",
+          "class": "equity",
+          "bucket": "financial",
+          "instrument_type": "fund",
+          "wind_name": "银行ETF华宝",
+          "listing_date": "2017-08-03"
+        },
+        "512000.SH": {
+          "name": "证券",
+          "class": "equity",
+          "bucket": "financial",
+          "instrument_type": "fund",
+          "wind_name": "券商ETF华宝",
+          "listing_date": "2016-09-14"
+        },
+        "512660.SH": {
+          "name": "军工",
+          "class": "equity",
+          "bucket": "industry",
+          "instrument_type": "fund",
+          "wind_name": "军工ETF国泰",
+          "listing_date": "2016-08-08"
+        },
+        "512480.SH": {
+          "name": "半导体",
+          "class": "equity",
+          "bucket": "technology",
+          "instrument_type": "fund",
+          "wind_name": "半导体ETF国联安",
+          "listing_date": "2019-06-12"
+        },
+        "512010.SH": {
+          "name": "医药",
+          "class": "equity",
+          "bucket": "healthcare",
+          "instrument_type": "fund",
+          "wind_name": "医药ETF易方达",
+          "listing_date": "2013-10-28"
+        },
+        "159928.SZ": {
+          "name": "消费",
+          "class": "equity",
+          "bucket": "consumer",
+          "instrument_type": "fund",
+          "wind_name": "消费ETF汇添富",
+          "listing_date": "2013-09-16"
+        },
+        "159996.SZ": {
+          "name": "家电",
+          "class": "equity",
+          "bucket": "consumer",
+          "instrument_type": "fund",
+          "wind_name": "家电ETF国泰",
+          "listing_date": "2020-03-16"
+        },
+        "515030.SH": {
+          "name": "新能源车",
+          "class": "equity",
+          "bucket": "industry",
+          "instrument_type": "fund",
+          "wind_name": "新能源车ETF华夏",
+          "listing_date": "2020-03-04"
+        },
+        "515790.SH": {
+          "name": "光伏",
+          "class": "equity",
+          "bucket": "industry",
+          "instrument_type": "fund",
+          "wind_name": "光伏ETF华泰柏瑞",
+          "listing_date": "2020-12-18"
+        },
+        "512400.SH": {
+          "name": "有色金属",
+          "class": "equity",
+          "bucket": "materials",
+          "instrument_type": "fund",
+          "wind_name": "有色金属ETF南方",
+          "listing_date": "2017-09-01"
+        },
+        "159870.SZ": {
+          "name": "化工",
+          "class": "equity",
+          "bucket": "materials",
+          "instrument_type": "fund",
+          "wind_name": "化工ETF鹏华",
+          "listing_date": "2021-03-03"
+        },
+        "512200.SH": {
+          "name": "房地产",
+          "class": "equity",
+          "bucket": "property",
+          "instrument_type": "fund",
+          "wind_name": "房地产ETF南方",
+          "listing_date": "2017-09-25"
+        },
+        "159611.SZ": {
+          "name": "电力",
+          "class": "equity",
+          "bucket": "utility",
+          "instrument_type": "fund",
+          "wind_name": "电力ETF广发",
+          "listing_date": "2022-01-07"
+        },
+        "518880.SH": {
+          "name": "黄金",
+          "class": "gold",
+          "bucket": "gold",
+          "instrument_type": "fund",
+          "wind_name": "黄金ETF华安",
+          "listing_date": "2013-07-29"
+        },
+        "CBA00101.CS": {
+          "name": "中债新综合财富总值",
+          "class": "bond",
+          "bucket": "bond",
+          "instrument_type": "index_proxy",
+          "wind_name": "中债-新综合财富(总值)指数",
+          "listing_date": "2001-12-31"
+        },
+        "CBA00121.CS": {
+          "name": "中债新综合财富1–3年",
+          "class": "bond",
+          "bucket": "short_bond",
+          "instrument_type": "index_proxy",
+          "wind_name": "中债-新综合财富(1-3年)指数",
+          "listing_date": "2001-12-31"
+        },
+        "CBA00601.CS": {
+          "name": "中债国债总财富",
+          "class": "bond",
+          "bucket": "government_bond",
+          "instrument_type": "index_proxy",
+          "wind_name": "中债-国债总财富(总值)指数",
+          "listing_date": "2001-12-31"
+        },
+        "CBA05801.CS": {
+          "name": "中债国债及政策性银行债财富",
+          "class": "bond",
+          "bucket": "government_policy_bond",
+          "instrument_type": "index_proxy",
+          "wind_name": "中债-国债及政策性银行债财富(总值)指数",
+          "listing_date": "2006-12-31"
+        },
+        "CBA00701.CS": {
+          "name": "中债中短期债券财富",
+          "class": "bond",
+          "bucket": "short_bond",
+          "instrument_type": "index_proxy",
+          "wind_name": "中债-中短期债券财富(总值)指数",
+          "listing_date": "2001-12-31"
+        }
+      }
+    },
+    "US": {
+      "currency": "USD",
+      "assets": {
+        "SPY.P": {
+          "name": "标普500",
+          "class": "equity",
+          "bucket": "broad",
+          "instrument_type": "fund",
+          "wind_name": "SPDR标普500ETF",
+          "listing_date": "1993-01-29"
+        },
+        "QQQ.O": {
+          "name": "纳指100",
+          "class": "equity",
+          "bucket": "growth",
+          "instrument_type": "fund",
+          "wind_name": "Invesco纳指100ETF",
+          "listing_date": "1999-03-10"
+        },
+        "IWM.P": {
+          "name": "罗素2000",
+          "class": "equity",
+          "bucket": "broad",
+          "instrument_type": "fund",
+          "wind_name": "iShares罗素2000ETF",
+          "listing_date": "2000-05-26"
+        },
+        "EFA.P": {
+          "name": "发达市场除美国加拿大",
+          "class": "equity",
+          "bucket": "international",
+          "instrument_type": "fund",
+          "wind_name": "iShares MSCI追踪EAFE指数ETFETF",
+          "listing_date": "2001-08-17"
+        },
+        "EEM.P": {
+          "name": "新兴市场",
+          "class": "equity",
+          "bucket": "international",
+          "instrument_type": "fund",
+          "wind_name": "iShares MSCI新兴市场ETF",
+          "listing_date": "2003-04-11"
+        },
+        "VTV.P": {
+          "name": "价值",
+          "class": "equity",
+          "bucket": "value",
+          "instrument_type": "fund",
+          "wind_name": "Vanguard价值股ETF",
+          "listing_date": "2004-01-30"
+        },
+        "VUG.P": {
+          "name": "成长",
+          "class": "equity",
+          "bucket": "growth",
+          "instrument_type": "fund",
+          "wind_name": "Vanguard成长股ETF",
+          "listing_date": "2004-02-02"
+        },
+        "SCHD.P": {
+          "name": "红利",
+          "class": "equity",
+          "bucket": "dividend",
+          "instrument_type": "fund",
+          "wind_name": "Schwab美国红利股ETF",
+          "listing_date": "2011-10-20"
+        },
+        "XLF.P": {
+          "name": "金融",
+          "class": "equity",
+          "bucket": "financial",
+          "instrument_type": "fund",
+          "wind_name": "SPDR金融精选ETF",
+          "listing_date": "1998-12-22"
+        },
+        "XLK.P": {
+          "name": "科技",
+          "class": "equity",
+          "bucket": "technology",
+          "instrument_type": "fund",
+          "wind_name": "SPDR科技精选ETF",
+          "listing_date": "1998-12-22"
+        },
+        "XLV.P": {
+          "name": "医疗",
+          "class": "equity",
+          "bucket": "healthcare",
+          "instrument_type": "fund",
+          "wind_name": "SPDR医疗保健精选ETF",
+          "listing_date": "1998-12-22"
+        },
+        "XLP.P": {
+          "name": "必需消费",
+          "class": "equity",
+          "bucket": "consumer",
+          "instrument_type": "fund",
+          "wind_name": "SPDR日常消费精选ETF",
+          "listing_date": "1998-12-22"
+        },
+        "XLY.P": {
+          "name": "可选消费",
+          "class": "equity",
+          "bucket": "consumer",
+          "instrument_type": "fund",
+          "wind_name": "SPDR可选消费精选ETF",
+          "listing_date": "1998-12-22"
+        },
+        "XLI.P": {
+          "name": "工业",
+          "class": "equity",
+          "bucket": "industry",
+          "instrument_type": "fund",
+          "wind_name": "SPDR工业精选ETF",
+          "listing_date": "1998-12-22"
+        },
+        "XLE.P": {
+          "name": "能源",
+          "class": "equity",
+          "bucket": "energy",
+          "instrument_type": "fund",
+          "wind_name": "State Street能源精选板块SPDR ETF",
+          "listing_date": "1998-12-22"
+        },
+        "XLU.P": {
+          "name": "公用事业",
+          "class": "equity",
+          "bucket": "utility",
+          "instrument_type": "fund",
+          "wind_name": "SPDR公用事业精选ETF",
+          "listing_date": "1998-12-22"
+        },
+        "XLB.P": {
+          "name": "材料",
+          "class": "equity",
+          "bucket": "materials",
+          "instrument_type": "fund",
+          "wind_name": "SPDR材料精选ETF",
+          "listing_date": "1998-12-22"
+        },
+        "XLRE.P": {
+          "name": "房地产",
+          "class": "equity",
+          "bucket": "property",
+          "instrument_type": "fund",
+          "wind_name": "SPDR房地产精选ETF",
+          "listing_date": "2015-10-08"
+        },
+        "IEF.O": {
+          "name": "7–10年美债",
+          "class": "bond",
+          "bucket": "bond",
+          "instrument_type": "fund",
+          "wind_name": "iShares7-10年国债ETF",
+          "listing_date": "2002-07-26"
+        },
+        "TLT.O": {
+          "name": "20年以上美债",
+          "class": "bond",
+          "bucket": "bond",
+          "instrument_type": "fund",
+          "wind_name": "iShares20年以上国债ETF",
+          "listing_date": "2002-07-26"
+        },
+        "TIP.P": {
+          "name": "通胀保值债",
+          "class": "bond",
+          "bucket": "bond",
+          "instrument_type": "fund",
+          "wind_name": "iShares通胀保值国债ETF",
+          "listing_date": "2003-12-05"
+        },
+        "LQD.P": {
+          "name": "投资级信用债",
+          "class": "bond",
+          "bucket": "bond",
+          "instrument_type": "fund",
+          "wind_name": "iShares投资级公司债ETF",
+          "listing_date": "2002-07-26"
+        },
+        "HYG.P": {
+          "name": "高收益债",
+          "class": "bond",
+          "bucket": "bond",
+          "instrument_type": "fund",
+          "wind_name": "iShares美元高收益债ETF",
+          "listing_date": "2007-04-11"
+        },
+        "GLD.P": {
+          "name": "黄金",
+          "class": "gold",
+          "bucket": "gold",
+          "instrument_type": "fund",
+          "wind_name": "SPDR黄金ETF",
+          "listing_date": "2004-11-18"
+        },
+        "USO.P": {
+          "name": "原油期货",
+          "class": "oil",
+          "bucket": "oil",
+          "instrument_type": "fund",
+          "wind_name": "USCF原油基金",
+          "listing_date": "2006-04-10"
+        },
+        "SPLV.P": {
+          "name": "低波动",
+          "class": "equity",
+          "bucket": "low_vol",
+          "instrument_type": "fund",
+          "wind_name": "Invesco标普低波动率ETF",
+          "listing_date": "2012-02-16"
+        },
+        "SPMO.P": {
+          "name": "动量",
+          "class": "equity",
+          "bucket": "momentum",
+          "instrument_type": "fund",
+          "wind_name": "Invesco标普500动量ETF",
+          "listing_date": "2015-10-09"
+        },
+        "SPHQ.P": {
+          "name": "质量",
+          "class": "equity",
+          "bucket": "quality",
+          "instrument_type": "fund",
+          "wind_name": "PowerShares标普500优质投资组合",
+          "listing_date": "2005-12-07"
+        }
+      }
+    }
+  },
+  "require_correlation": true,
+  "methods": [
+    "cdar",
+    "hrp"
+  ],
+  "cash_yield_source": {
+    "name": "中债商业银行同业存单到期收益率(AAA):1年",
+    "wind_edb_code": "M1010885",
+    "currency": "CNY",
+    "unit": "percent",
+    "accrual": "lagged annual yield, ACT/365",
+    "status": "downloaded"
+  }
+}

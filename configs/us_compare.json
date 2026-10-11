@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "jobs": [
+    {
+      "name": "erc",
+      "config": "us_erc.json"
+    },
+    {
+      "name": "flat",
+      "config": "us_flat.json"
+    },
+    {
+      "name": "nested_target",
+      "config": "us_nested_target.json"
+    },
+    {
+      "name": "protective_nested",
+      "config": "us_protective_nested.json"
+    },
+    {
+      "name": "adaptive",
+      "config": "us_adaptive.json"
+    }
+  ]
+}

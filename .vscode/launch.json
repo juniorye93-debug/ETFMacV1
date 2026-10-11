@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "调试组合程序",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "riskparity",
+      "args": ["run", "--config", "configs/cn_erc.json"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "subProcess": true
+    }
+  ]
+}

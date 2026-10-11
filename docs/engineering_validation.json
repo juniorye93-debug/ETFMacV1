@@ -1,0 +1,67 @@
+{
+  "test_counts": {
+    "engineering": 27,
+    "portfolio": 54,
+    "single": 14,
+    "total": 95
+  },
+  "batch_status": "COMPLETED",
+  "same_core_version": true,
+  "strategies": [
+    {
+      "strategy": "adaptive",
+      "status": "COMPLETED",
+      "code_sha256": "aadbc8b95297b500a3bdfc539d0f113a6c6a53560289e6e68a54d7f25aa29d82",
+      "annual_return": 0.026465289800675196,
+      "annual_excess": -0.0023533410094203067,
+      "max_drawdown": 0.016600796001635998,
+      "assessment": "GOALS_FAILED"
+    },
+    {
+      "strategy": "erc",
+      "status": "COMPLETED",
+      "code_sha256": "aadbc8b95297b500a3bdfc539d0f113a6c6a53560289e6e68a54d7f25aa29d82",
+      "annual_return": 0.07389562295648511,
+      "annual_excess": 0.045076992146389605,
+      "max_drawdown": 0.04726424413629349,
+      "assessment": "GOALS_FAILED"
+    },
+    {
+      "strategy": "flat",
+      "status": "COMPLETED",
+      "code_sha256": "aadbc8b95297b500a3bdfc539d0f113a6c6a53560289e6e68a54d7f25aa29d82",
+      "annual_return": 0.0751951085173701,
+      "annual_excess": 0.0463764777072746,
+      "max_drawdown": 0.20624145309289366,
+      "assessment": "GOALS_FAILED"
+    },
+    {
+      "strategy": "nested_target",
+      "status": "COMPLETED",
+      "code_sha256": "aadbc8b95297b500a3bdfc539d0f113a6c6a53560289e6e68a54d7f25aa29d82",
+      "annual_return": 0.04526471619774597,
+      "annual_excess": 0.016446085387650466,
+      "max_drawdown": 0.09085384016752018,
+      "assessment": "GOALS_FAILED"
+    },
+    {
+      "strategy": "protective_nested",
+      "status": "COMPLETED",
+      "code_sha256": "aadbc8b95297b500a3bdfc539d0f113a6c6a53560289e6e68a54d7f25aa29d82",
+      "annual_return": 0.05594413519083452,
+      "annual_excess": 0.02712550438073902,
+      "max_drawdown": 0.08812862582111025,
+      "assessment": "GOALS_FAILED"
+    }
+  ],
+  "wind_fetches": [
+    "data/verification-cn-fetch/snapshot.json",
+    "data/verification-single-fetch/snapshot.json"
+  ],
+  "wheel_run": "runs/acceptance-wheel/run.json",
+  "ledger": {
+    "first_added": 2348,
+    "second_added": 0
+  },
+  "warnings": "378 sklearn warnings in short-history synthetic tests; not suppressed"
+}

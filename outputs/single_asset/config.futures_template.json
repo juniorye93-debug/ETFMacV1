@@ -1,0 +1,1 @@
+{"short": true, "min_hold": 0, "multiplier": 300, "lot": 1, "margin_rate": 0.12, "margin_cap": 0.30, "max_notional": 1.0, "fee_bps": 3, "slippage_bps": 5}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "kind": "portfolio",
+  "market": "CN",
+  "strategy": "protective_nested",
+  "prices": "../outputs/asset_rotation/data/cn_expanded28_20260924.csv",
+  "cash": "../outputs/asset_rotation/data/aaa_ncd_1y.csv",
+  "universe": "universe.json",
+  "max_drawdown": 0.08,
+  "excess_return_multiple": 2,
+  "max_cash_age_days": 15,
+  "timeout_seconds": 7200,
+  "parameters": {},
+  "start": "2015-01-01"
+}

@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "riskparity-research"
+version = "0.1.0"
+description = "Deterministic, audited portfolio research pipelines"
+requires-python = ">=3.12"
+dependencies = ["numpy>=2.0", "pandas>=2.2", "scipy>=1.13,<1.17", "cvxpy>=1.6", "scikit-learn>=1.5", "PyPortfolioOpt>=1.5.6", "matplotlib>=3.9"]
+
+[project.optional-dependencies]
+data = ["akshare>=1.18", "yfinance>=0.2.50"]
+dev = ["pytest>=8", "build>=1"]
+
+[project.scripts]
+riskparity = "riskparity.cli:main"
+
+[tool.setuptools]
+packages = ["riskparity", "riskparity_legacy", "riskparity_single"]
+package-dir = {riskparity = "src/riskparity", riskparity_legacy = "outputs/asset_rotation", riskparity_single = "outputs/single_asset"}
+include-package-data = false
+
+[tool.setuptools.package-data]
+riskparity_legacy = ["config.json"]
+riskparity_single = ["config.*.json"]
+
+[tool.setuptools.cmdclass]
+build_py = "build_support.EngineBuild"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

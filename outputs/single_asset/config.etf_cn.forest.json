@@ -1,0 +1,8 @@
+{
+  "short": false,
+  "min_hold": 1,
+  "lot": 100,
+  "fee_bps": 3,
+  "slippage_bps": 5,
+  "estimator": "random_forest"
+}
